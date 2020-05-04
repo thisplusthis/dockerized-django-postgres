@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="James McDonald photographer" />
+  <meta name="keywords" content="photography photographer landscapes nature mountains scenic adventure outdoors travel" />
+  <meta name="robots" content="index,follow,noarchive" />
+  <title>base-docker-django-postgres</title>
+  <link rel="shortcut icon" type="image/png" href='{% static 'img/favicon.ico' %}'/>
+  <link rel='stylesheet' type='text/css' href='{% static 'css/style.css' %}'/>
+  <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+  {% block extra_style %}{% endblock %}
+</head>
+<body lang="en">
+
+  <div id="container">
+    {% block content %}{% endblock %}
+  </div>
+
+  <div id="footer">
+    <p class="tiny">Copyright &#169; {{ date.year }} MyCompany.</p>
+  </div>
+<script type="text/javascript" src="{% static 'js/responsive.min.js' %}"></script>
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>

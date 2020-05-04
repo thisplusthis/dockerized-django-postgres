@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:11.5-alpine
+    container_name: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file: conf/.env.db
+
+  web:
+    build: .
+    container_name: django
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    env_file: conf/.env
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

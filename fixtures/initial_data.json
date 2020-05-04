@@ -1,0 +1,20 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$q6DV1Wd4b0JT$XQ53GANtUiHBvrlCAWQNHSbQjVs0hYVh2mbZAcNZ3xA=",
+        "last_login": "2019-08-15T01:31:46.408Z",
+        "is_superuser": true,
+        "username": "testicles",
+        "first_name": "Testy",
+        "last_name": "McTesterson",
+        "email": "test@tester.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-05-01T01:31:33.772Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
