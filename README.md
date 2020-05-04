@@ -8,8 +8,7 @@
     `docker logs -f django`    
  
 ### See stuff
-1. Hello World page  
-    `http://localhost:8000/`
+Hello World page:  `http://localhost:8000/` 
     
 ### Admin user deets
 Url: `http://localhost:8000/restricted/admin/`  
