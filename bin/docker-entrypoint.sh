@@ -14,10 +14,6 @@ python /code/manage.py migrate
 echo "Loading initial fixture data"
 python /code/manage.py loaddata fixtures/initial_data.json
 
-echo "Loading images..."
-python /code/manage.py import_images --csv /code/apps/photo/data/photos.csv
-
 # Start server
 echo "Starting server"
 python /code/manage.py runserver 0.0.0.0:8000
-
