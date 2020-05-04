@@ -1,5 +1,3 @@
-#easy-django-postgres
-
 ### About
 Dockerized setup for a slim Django project using Postgres as the database.
 
