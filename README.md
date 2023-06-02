@@ -3,16 +3,16 @@
 2. Ensure docker, docker-compose, podman (optional) is installed.
 
 ### Pure Docker
-    `docker-compose up -d --build`
+    docker-compose up -d --build
 
 ### Podman
-    `podman machine init`
-    `podman machine set --rootful`
-    `podman machine start`
-    `docker-compose up -d --build`
+    podman machine init
+    podman machine set --rootful
+    podman machine start
+    docker-compose up -d --build
  
 ### See stuff
-Logs: `docker logs -f django`
+Logs: `docker logs -f django`  
 Hello World page:  `http://localhost:8000/`
     
 ### Admin user deets
@@ -21,7 +21,7 @@ Username: `testicles`
 Password: `motu123`
 
 ### Get into container(s)
-Docker: `docker exec -ti django bash`
+Docker: `docker exec -ti django bash`  
 Podman: `podman exec -ti django bash`
 
 ### Shutdown / Clean up
